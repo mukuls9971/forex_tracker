@@ -12,7 +12,7 @@ Axios
 NPM
 Styled Components
 
-# Underline Logic
+# Underlying Logic
 
 1. ForexConfig is created for initial state
 2. Config is updated with currencies by getCurrencies() function.
