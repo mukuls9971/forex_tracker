@@ -1,5 +1,5 @@
 import axios from "../../api/axios";
-import { apiCurrencies, apiExchange } from "../../api/apiUrls";
+import { apiCurrencies, apiExchange } from "../../api/urls";
 
 export const getCurrencies = async () => {
 	const url = apiCurrencies;

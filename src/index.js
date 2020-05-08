@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Forex from "./containers/Forex";
-import "./framework.css";
+import App from "./containers/App";
 
-ReactDOM.render(<Forex />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

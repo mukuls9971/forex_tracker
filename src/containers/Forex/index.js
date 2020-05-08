@@ -13,10 +13,11 @@ import ExchangeTable from "../../components/Forex/ExchangeTable";
 let refreshTimer = null;
 
 class Forex extends React.Component {
-	state = { config: forexConfig };
+	state = { config: forexConfig, isLoading: true };
 
-	async componentWillMount() {
+	async componentDidMount() {
 		const currencies = await getCurrencies();
+		this.setState({ isLoading: false });
 		this.setState(currencyConfig(this.state.config, currencies));
 
 		refreshTimer = setInterval(async () => {
@@ -29,8 +30,14 @@ class Forex extends React.Component {
 		clearInterval(refreshTimer);
 	}
 
+	renderLoading() {
+		return <div className="container">Loading...</div>;
+	}
+
 	render() {
-		return (
+		return this.state.isLoading ? (
+			this.renderLoading()
+		) : (
 			<div className="container">
 				{Object.values(this.state.config.grids).map((grid, index) => (
 					<div key={index}>

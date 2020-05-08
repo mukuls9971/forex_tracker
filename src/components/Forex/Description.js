@@ -1,11 +1,16 @@
 import React from "react";
+import styled from "styled-components";
 
 type Props = {
 	description: String,
 };
 
+const StyledComponent = styled.div`
+	margin-bottom: 30px;
+`;
+
 const Description = ({ description }: Props) => (
-	<div style={{ marginBottom: "30px" }}>{description}</div>
+	<StyledComponent>{description}</StyledComponent>
 );
 
 export default Description;
