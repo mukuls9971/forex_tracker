@@ -2,7 +2,7 @@
 
 # Description
 
-A React web app having tabular Forex Cross Rates and Forex Heat Map widgets.It features a real-time updated exchange price overview through APIs.
+A React web app having tabular Forex Cross Rates and Forex Heat Map widgets.It features a real-time updated exchange price overview through APIs..
 
 # Tech Stack:
 
